@@ -10,7 +10,7 @@ html,body{
 #page2{
     height: 100vh;
     width: 100%;
-    background-color:grey;
+    background-color:black;
     color: white;
     position: relative;
 }
@@ -31,12 +31,16 @@ html,body{
     gap: 2vw;
 }
 #page2 #nav ul li{
+    opacity: 1;
     list-style: none;
     font-size: 2vw;
     text-transform: capitalize;
     color: white;
 }
-
+#page2 #nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
 #page2 #nav #img{
     height: 75px;
     width: 75px;

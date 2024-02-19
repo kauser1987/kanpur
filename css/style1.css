@@ -14,9 +14,9 @@ html,body{
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background-color: black;
+    background-color: maroon;
     position: absolute;
-    z-index: 99;
+    z-index: 1;
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) ;
 }
 #page1{
