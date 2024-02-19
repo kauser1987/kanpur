@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color:grey;
+    color: white;
+    position: relative;
+}
+#page2 #nav{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1vw;
+    padding-right: 2vw;
+    position: sticky;
+}
+#page2 #nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+}
+#page2 #nav ul li{
+    list-style: none;
+    font-size: 2vw;
+    text-transform: capitalize;
+    color: white;
+}
+
+#page2 #nav #img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+    }
+#page2 #nav #img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#page2 #slide{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    height: 50vh;
+    width: 95vw;
+    border-radius: 12px;
+    overflow: hidden;
+}
+#page2 #slide #slide1{
+    left: -100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    animation: anima1 7s linear 3s  infinite ;
+
+    
+}
+#page2 #slide #slide2{
+    left: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    /* background-color: brown; */
+    animation: anima2 7s linear 3s infinite ;
+}
+/* #page2 #slide #slide2:hover{
+    animation-play-state: paused;
+}
+#page2 #slide #slide1:hover{
+    animation-play-state: paused;
+} */
+@keyframes anima1 {
+    100%{
+        transform: translateX(100%);
+    }
+}
+@keyframes anima2 {
+    100%{
+        transform: translateX(100%);
+    }
+}
+#page2 #slide #slide1 #left{
+    border-radius:12px;
+    height: 100%;
+    width: 30%;
+    background-color: red;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+#page2 #slide #slide1 #left img{
+    border-radius:12px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+#page2 #slide #slide1 #center{
+    border-radius:12px;
+    height: 100%;
+    width: 30%;
+    background-color: green;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+#page2 #slide #slide1 #center img{
+    border-radius:12px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+#page2 #slide #slide1 #right{
+    border-radius:12px;
+    height: 100%;
+    width: 30%;
+    background-color: yellow;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+#page2 #slide #slide1 #right img{
+    border-radius:12px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+#page2 #slide #slide2 #left2{
+    border-radius:12px;
+    height: 100%;
+    width: 30%;
+    background-color: indigo;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+#page2 #slide #slide2 #left2 img{
+    border-radius:12px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+#page2 #slide #slide2 #center2{
+    border-radius:12px;
+    height: 100%;
+    width: 30%;
+    background-color: skyblue;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+#page2 #slide #slide2 #center2 img{
+    border-radius:12px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+#page2 #slide #slide2 #right2{
+    border-radius:12px;
+    height: 100%;
+    width: 30%;
+    background-color: goldenrod;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+#page2 #slide #slide2 #right2 img{
+    border-radius:12px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+#page2 #label{
+    height: 10vh;
+    width: 80vw;
+    left: 50%;
+    bottom: 10%;
+    position: absolute;
+    transform: translateX(-50%);
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 1s;
+
+}
+#page2 #label h1{
+    font-size: 4vw;
+    text-transform: uppercase;
+    transform: translateY(100%);
+    color: white;
+    /* animation: lifter 1s linear 4s ; */
+    
+}
+/* @keyframes lifter {
+    0%{
+
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+} */

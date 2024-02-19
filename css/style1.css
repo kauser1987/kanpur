@@ -10,6 +10,15 @@ html,body{
 #main{
     width: 100%;
 }
+#minicircle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    z-index: 99;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) ;
+}
 #page1{
     position: absolute;
     height: 100vh;
@@ -42,13 +51,4 @@ html,body{
     }
     
 }
-#page2{
-    height: 100vh;
-    width: 100%;
-    background-color: blueviolet;
-}
-#page3{
-    height: 100vh;
-    width: 100%;
-    background-color: black;
-}
+
