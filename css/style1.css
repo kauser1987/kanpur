@@ -15,6 +15,7 @@ html,body{
     width: 40px;
     border-radius: 50%;
     background-color: maroon;
+    border: 2px solid whitesmoke;
     position: absolute;
     z-index: 1;
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) ;
