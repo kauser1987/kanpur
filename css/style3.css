@@ -72,10 +72,11 @@ html,body{
     /* overflow: hidden; */
 }
 #page3 #details #left  p #bottom img{
+    border-radius: 12px;
     height: 140%;
     width: 40%;
-    object-fit: cover;
-    object-position: center;
+    /* object-fit: cover; */
+    /* object-position: center; */
     opacity: 0;
 }
 /* #page3 #details #left  p:hover #bottom img{
@@ -105,10 +106,11 @@ html,body{
     /* overflow: hidden; */
 }
 #page3 #details #right  p #bottom img{
+    border-radius: 12px;
     height: 140%;
     width: 40%;
-    object-fit: cover;
-    object-position: center;
+    /* object-fit: cover; */
+    /* object-position: center; */
     opacity: 0;
 }
 #page3 #details #right  p:hover #bottom img{

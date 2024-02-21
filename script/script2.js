@@ -11,3 +11,10 @@ gsap.to("#page2 #label h1",{
     duration:1,
     
 })
+var navv = document.querySelector("#page2 #nav ul ");
+navv.addEventListener("mousemove",()=>{
+    document.querySelector("#minicircle").style.opacity=0;
+})
+navv.addEventListener("mouseleave",()=>{
+    document.querySelector("#minicircle").style.opacity=1;
+})
