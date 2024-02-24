@@ -25,6 +25,7 @@ html,body{
     color: transparent;
     background-image: url("../images/logo2.jfif");
     -webkit-background-clip: text;
+    z-index: 999;
 }
 #baloon{
     position: absolute;

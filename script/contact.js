@@ -1,21 +1,8 @@
 function sendEmail() {
-
-//   Email.send({
-//     Host : "smtp.gmail.com",
-//     Username : "kauser1987@gmail.com",
-//     Password : "kfqd rhjm abzn uwjf",
-//     To : 'quasimansari75@gmail.com',
-//     From : document.getElementById("email").value,
-//     Subject : "This is the subject",
-//     Body : "And this is the body"
-// }).then(
-//   message => alert(message)
-// );
-
     Email.send({
-        Host : "smtp.gmail.com",
-        Username : "kauser1987@gmail.com",
-        Password : "kfqdrhjmabznuwjf",
+        Host : "smtp.elasticemail.com",
+        Username : "ramar702211@gmail.com",
+        Password : "83CE55DB86915AEC5D6E5F97BBE31A746CC4",
         To : 'quasimansari75@gmail.com',
         From : document.getElementById("email").value,
         Subject : "New Contact Form Enquiry",

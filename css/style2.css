@@ -2,6 +2,10 @@
     font-family: home;
     src: url("../fonts/Futura-Bold.woff2");
 }
+@font-face {
+    font-family: nav;
+    src: url("../fonts/Chewy-Regular.ttf");
+}
 *{
     margin: 0;
     padding: 0;
@@ -25,10 +29,12 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1vw;
-    padding-right: 2vw;
-    position: sticky;
+    padding: 0 3vw;
+    font-family: "nav";
 }
+/* #page2 #nav ul li:last-child{
+    margin-right: 4vw;
+} */
 #page2 #nav ul{
     display: flex;
     align-items: center;
@@ -38,19 +44,49 @@ html,body{
 #page2 #nav ul li{
     opacity: 1;
     list-style: none;
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-transform: capitalize;
     color: white;
-    font-weight: bolder
+    position: relative;
+}
+#page2 #nav ul li::after{
+content: " ";
+position: absolute;
+bottom: 0;
+left: 0;
+height: 2px;
+width: 0%;
+background-color: white;
+transition: all ease-in 0.3s;
+}
+#page2 #nav ul li:hover:after{
+    width: 100%;
+}
+#page2 #nav #entertainment{
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+}
+#page2 #nav #entertainment #menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: .8vw;
+    top: 110%;
+    left: 0%;
+    height: 10vw;
+    width: 10vw;
+    opacity: 0;
+    z-index: 99;
+}
+#page2 #nav #entertainment:hover #menu{
+    opacity: 1;
 }
 #page2 #nav ul li a{
     text-transform: uppercase;
     text-decoration: none;
-    /* background: linear-gradient(white, grey, white);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent; */
-    /* text-shadow: 2px 2px 2px  yellow; */
     color: white;
 }
 #page2 #nav #img{
