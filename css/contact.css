@@ -26,7 +26,7 @@ html,body{
     text-decoration: none;
     color: whitesmoke;
 }
-#contact{
+/* #contact{
     height: 85vh;
     width: 40vw;
     background-color: grey;
@@ -38,9 +38,31 @@ html,body{
     border-radius: 12px;
     user-select: none;
 
-}
-#contact h2{
-    font-size: xx-large;
+} */
+#container{
+    position: absolute;    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 75vh;
+    width: 80vw;
+    background-color: #282c31;
+    }
+    #container #right{
+        position: absolute;
+        height: 80%;
+        width: 60%;
+        background-color: #89d7e4;
+        right: 3%;
+        top: 10%;
+        bottom: 10%;
+    }
+
+#container #right h2{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: larger;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: underline;
@@ -53,30 +75,65 @@ form{
     justify-content: center;
     height: 100%;
     width: 100%;
-    font-size: x-large;
+    font-size: large;
     font-weight: bolder;
 }
 form textarea{
-    font-size: 18px;
+    font-size: small;
     font-weight: bold;
     padding-top: 1vw;
     padding-left: 2vw;
     height: 5vw;
-    width: 90%;
-    border: 1px solid black;
-    border-radius: 8px;
+    width: 60%;
+    color: #605b5b;
 }
 form :nth-child(2n){
     margin-bottom: 1.4vw;
 }
 form input{
-    font-size: large;
+    color: #605b5b;
+    font-size: small;
     font-weight: bold;
     padding-left: 2vw;
-    height: 5vw;
-    width: 90%;
-    border: 1px solid black;
-    border-radius: 8px;
+    height: 3vw;
+    width: 60%;
 }
+
+#container #left{
+    position: absolute;
+    height: 60%;
+    width: 35%;
+    left: 8%;
+    top: 17%;
+    z-index: 99;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+#container #left #block{
+    height: 23vh;
+    width: 13vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+}
+#container #left #block #title{
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    font-weight: bolder;
+}
+#container #left #block #desc{
+   text-transform: capitalize; 
+   font-size: 1vw;
+}
+
+
+
+
+
 
 
